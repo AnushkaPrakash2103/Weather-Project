@@ -2,13 +2,85 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Weather App</title>
+        <title>My Weather App</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+
+        <style>
+            h2{
+            text-align: center;
+            }
+            .input-text
+            {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                height: 60px;
+                border: none;
+                background: transparent;
+                font-size: 20px;
+                font-weight: 200;
+            }
+            input[type="text"]:focus 
+            {
+                outline: none;
+                box-shadow: inset 0 -2px 0 0 #2b304d;
+                border-width: 1px;
+            }
+            button
+            {
+                min-height: 40px;
+                width: 40px;
+                border-radius: 10%;
+                border-color: transparent;
+                background-color: #2b304d;
+                color: #fff;
+                font-size: 20px;
+                border-width: 0;
+            }
+            h1
+            {
+                text-align: center;
+                font-family: Fruktur;
+                margin-top: -15px;
+            }
+        </style>
+
     </head>
     <body>
-        <form action="/" method="post">
-            <label for="cityInput">City Name: </label>
-            <input id="cityInput" type="text" name="cityName">
-            <button type="submit">Go</button>
-        </form>
+        
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 col-sm-12 col-xs-12"> 
+                       <div class="card p-4">    
+                        
+                            <div class="d-flex flex-column temp mt-5 mb-3">
+                                <h1 class="mb-0" id="heading" >My WeatherApp</h1>
+                            </div>
+                           <div class="d-flex flex-column temp mt-5 mb-3">
+                               <h2 class="mb-0" id="heading" style="font-size: x-large;" >Enter the name of your city</h2>
+                           </div>
+                           
+                           <div class="input-text">
+                                <form action="/" method="post">
+                                    <input id="cityInput" type="text" name="cityName" autocomplete="off">
+                                    <button type="submit">Go</button>
+                                </form>
+                           </div>
+                            
+              
+                        </div>
+                </div>
+            </div>
+        
+        
+        </div>
     </body>
+    <footer>
+        All Copyrights are reserved.
+    </footer>
 </html>
